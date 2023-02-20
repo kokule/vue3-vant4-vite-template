@@ -5,13 +5,11 @@
 
 ### 启动项目
  ```
-  git clone https://github.com/MrZHLF/vue3.0-vant-h5.git
-
-  cd vue3.0-vant-h5
+  git clone https://github.com/kokule/vue3-vant4-vite-template.git
 
   npm install 或者使用 cnpm 切换到淘宝镜像
 
-  cnpm run serve
+  npm run dev
  ```
 
 ### 目录
