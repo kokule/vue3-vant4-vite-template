@@ -1,0 +1,44 @@
+{
+  "id": "3909240",
+  "name": "公司icon-",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "26635360",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "34213874",
+      "name": "报销",
+      "font_class": "baoxiao",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "34213879",
+      "name": "发票",
+      "font_class": "fapiao",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "34213881",
+      "name": "申请",
+      "font_class": "shenqing",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "34213882",
+      "name": "借款",
+      "font_class": "jiekuan",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    }
+  ]
+}

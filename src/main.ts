@@ -6,6 +6,7 @@ import "normalize.css/normalize.css";
 import "@/styles/index.scss";
 // svg icon
 import "virtual:svg-icons-register";
+import 'amfe-flexible'
 
 import App from "./App.vue";
 import router from "./router";
