@@ -18,8 +18,12 @@
 
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
+import type { PropType } from 'vue'
+import type { TabItem } from '@/types'
 const props = defineProps({
-  tabList: Array
+  tabList: Array as unknown as PropType<[TabItem]>
+  // tabList: Array<{id: string, name: string}>
+  // tabList: Array as unknown as any
 })
 console.log(props.tabList, 'tabList')
 const active = ref(0)

@@ -50,7 +50,8 @@ export default defineConfig(({ mode }) => {
     ],
     resolve: {
       alias: {
-        "@": fileURLToPath(new URL("./src", import.meta.url))
+        "@": path.join(__dirname, "./src"), // path记得引入
+        // "@": fileURLToPath(new URL("./src", import.meta.url))
       }
     },
     server: {

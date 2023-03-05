@@ -10,13 +10,13 @@
             <van-button hairline type="primary" size="small" class="bill-status">待交财务</van-button>
           </div>
         </div>
-        <van-divider />
+        <van-divider dashed/>
         <div v-for="item in fakeData" :key="item.name" class="bill-main-content">
           <div class="content">
-            <span class="name">{{ item.name }}</span>
+            <span class="name">{{ item.name }}：</span>
             <span class="desc">{{ item.desc }}</span>
           </div>
-          <van-divider />
+          <van-divider/>
         </div>
         <div class="more-btn">
           查看更多详情
@@ -146,21 +146,19 @@
             { name: '部门', desc: '学生工作处' },
             { name: '关联项目', desc: '张一、陈二、吴三' }
           ]
-        }
-      ]
+        }]
       return { activeNames, fakeData, costDetail, stepData }
     }
   }
   </script>
   <style lang="scss">
   .bill {
-    font-family: Microsoft YaHei;
     font-weight: 400;
     .bill-container {
-      padding: 15px;
+      padding: 30px;
       background: #ffffff;
-      box-shadow: 0px 0px 10px 0px rgba(60, 92, 175, 0.2);
-      margin-bottom: 20px;
+      box-shadow: 0 0 10px 0 rgba(60, 92, 175, 0.2);
+      margin-bottom: 40px;
       .bill-container-top {
         display: flex;
         justify-content: space-between;
@@ -170,13 +168,13 @@
           flex-direction: column;
           justify-content: space-around;
           .name {
-            font-size: 18px;
+            font-size: 36px;
             color: #333333;
             width: 100%;
           }
           .num {
-            padding-top: 7px;
-            font-size: 12px;
+            padding-top: 14px;
+            font-size: 24px;
             color: #777777;
           }
         }
@@ -187,73 +185,70 @@
         }
       }
       .van-divider {
-        margin:15px 0;
+        margin: 30px 0;
         border-color: #d8d8d8;
       }
       .bill-main-content {
         .content {
           display: flex;
-          justify-content: start;
-          font-size: 13px;
-          line-height: 33px;
+          font-size: 30px;
+          min-height: 36px;
+          align-items: center;
+          justify-content: center;
         }
         .name {
-          width:80px;
+          width: 150px;
           color: #777777;
           white-space: nowrap;
-          margin-right: 15px;
         }
         .desc {
           flex: 1;
           color: #333333;
+          line-height: 50px;
         }
       }
       .more-btn {
-        font-size: 13px;
+        font-size: 26px;
         color: #496fe5;
         text-align: center;
       }
       .van-collapse-item {
         .van-cell {
-          padding-left: 0 !important;
-          padding: 30px 0;
+          padding: 60px 0;
         }
       }
       .collapse-item {
-        margin-right: 50px;
+        margin-right: 100px;
         color: #333333;
-        line-height: 33px;
         display: inline-block;
-        font-size: 24px;
-        width: 120px;
+        font-size: 48px;
+        width: 240px;
       }
       .collapse-item-status {
-        height: 23px;
-        font-size: 24px;
+        height: 46px;
+        font-size: 48px;
         color: #555555;
-        line-height: 33px;
       }
       .van-collapse-item__content {
-        padding: 30px 0;
+        padding: 60px 0;
       }
       .van-steps {
         .step-item1 {
-          font-size: 24px;
+          font-size: 48px;
           color: #333333;
         }
         .step-item2 {
-          font-size: 24px;
+          font-size: 48px;
           color: #777777;
-          padding-top: 10px;
+          padding-top: 20px;
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;
         }
       }
       .step-rigth-item {
-        font-size: 20px;
+        font-size: 40px;
         color: #333333;
-        line-height: 33px;
       }
     }
   }
@@ -261,22 +256,19 @@
     display: flex;
     justify-content: space-between;
     .left {
-      font-size: 24px;
+      font-size: 48px;
       color: #333333;
-      line-height: 33px;
     }
     .right {
-      font-size: 24px;
+      font-size: 48px;
       color: #fe9d2a;
-      line-height: 33px;
     }
   }
   .detail-item {
-    padding-top: 20px;
+    padding-top: 40px;
     > div {
-      font-size: 24px;
+      font-size: 48px;
       color: #777777;
-      line-height: 50px;
     }
     .name {
       width: 120px;
@@ -287,17 +279,16 @@
     background: #f8f8f8;
   }
   .pd-10 {
-    padding: 20px 15px !important;
+    padding: 40px 30px !important;
   }
-  
+
   .bill-status {
     background: #fff4ee;
     border: 1px solid #ffb993;
     .van-button__content {
       .van-button__text {
-        font-size: 12px;
+        font-size: 24px;
         color: #ed7d31;
-        line-height: 20px;
       }
     }
   }
